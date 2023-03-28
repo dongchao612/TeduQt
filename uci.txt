@@ -1,0 +1,1 @@
+uic untitled.ui -o ui_untitled.h
