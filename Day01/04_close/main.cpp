@@ -18,18 +18,16 @@ int main(int argc, char** argv)
     button.move(50, 140);
 
     // 点击按钮，关闭标签
-    QObject::connect(&button,SIGNAL(clicked()),&label,SLOT(close()));
+    QObject::connect(&button,SIGNAL(clicked(void)),&label,SLOT(close(void)));
 
 
     //增加退出按钮，实现点击按钮退出应用程序
     QPushButton button2("退出", &parent);
     button2.move(200, 140);
 
-    QObject::connect(&button2, SIGNAL(clicked()),
-                     // &app,SLOT(closeAllWindows())
-                     // &app,SLOT(quit())
-                     &parent, SLOT(close())
-                    );
+    QObject::connect(&button2, SIGNAL(clicked()),&app,SLOT(closeAllWindows()));         
+    // QObject::connect(&button2, SIGNAL(clicked()),&app,SLOT(quit()));
+    // QObject::connect(&button2, SIGNAL(clicked()),&parent, SLOT(close());
 
 
 
