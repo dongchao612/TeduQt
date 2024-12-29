@@ -1,6 +1,7 @@
 # TeduQt
 达内教育Qt代码
-
+更新时间：2024-12-29
+Qt版本：`6.8.1`
 # 添加环境变量
 在 `~/.bashrc` 下面添加下面两行
 ```sh
@@ -25,7 +26,7 @@ QT+=widgets gui
 qmake
 # sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev
 
-make
+make  # mingw32-make for windows
 
 ```
 
