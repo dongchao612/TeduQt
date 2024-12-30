@@ -1,11 +1,11 @@
-﻿#include <QApplication>
-#include "calculatorDialog.h"
+#include "calculatordialog.h"
 
-int main(int argc,char** argv)
+#include <QApplication>
+
+int main(int argc, char *argv[])
 {
-    //创建QT应用程序对象
-    QApplication app(argc,argv);
-    CalculatorDialog c;
-    c.show();
-    return app.exec();
+    QApplication a(argc, argv);
+    CalculatorDialog w;
+    w.show();
+    return a.exec();
 }
