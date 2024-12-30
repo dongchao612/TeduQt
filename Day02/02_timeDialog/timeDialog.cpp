@@ -42,7 +42,7 @@ TimeDialog::~TimeDialog()
 void TimeDialog::getTime()
 {
     //获取当前时间,将时间转化为字符串
-    QString str = QTime::currentTime().toString("H:m:s a");
+    QString str = QTime::currentTime().toString("hh:mm:ss");
     // qDebug() << str;
 #if 0
     //显示时间

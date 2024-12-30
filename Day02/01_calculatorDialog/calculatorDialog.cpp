@@ -68,6 +68,7 @@ void CalculatorDialog::enableButton()
 
     // 当左右操作数都输入了有效的数据 则使能等号按钮 否则设置禁用
     m_button->setEnabled(bXOK && bYOK);
+    m_editZ->clear();
 
 }
 CalculatorDialog::~CalculatorDialog()
